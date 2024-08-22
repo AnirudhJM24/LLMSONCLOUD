@@ -1,10 +1,55 @@
-# RUN LLMS SUPPORTED ON OLLAMA ON THE CLOUD AND USE IT THROUGH YOUR LOCAL MACHINE
+# Running LLMs Supported on Ollama via Cloud and Local Machine
 
-### Steps
-- CREATE A NEW NOTEBOOK AND CHOOSE THE T4 RUNTIME
-- CREATE THE server.py file on your local and upload it to your colab workspace
-- COPY THE ollamaoncolab.ipynb NOTEBOOK INTO YOU COLAB NOTEBOOK AND RUN THE CELLS
-- OPEN THE client.py ON YOUR MACHINE AND RUN IT 
+This guide walks you through the process of running large language models (LLMs) supported on Ollama using a cloud-based environment and accessing it through your local machine. By the end of this tutorial, you'll be able to deploy an LLM on the cloud and interact with it seamlessly from your local setup.
 
-### Future Plans
-- Add a tutorial on pulling models from hugging face hub and host it on ollama + colab
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+  - [Step 1: Create a New Notebook with T4 Runtime](#step-1-create-a-new-notebook-with-t4-runtime)
+  - [Step 2: Upload `server.py` to Colab](#step-2-upload-serverpy-to-colab)
+  - [Step 3: Copy and Run the `ollamaoncolab.ipynb` Notebook](#step-3-copy-and-run-the-ollamaoncolabipynb-notebook)
+  - [Step 4: Execute `client.py` on Your Local Machine](#step-4-execute-clientpy-on-your-local-machine)
+- [Future Plans](#future-plans)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+Before starting, ensure you have the following:
+- A Google Colab account.
+- A local machine with Python installed.
+- Basic knowledge of Python and cloud environments.
+
+## Setup Instructions
+
+### Step 1: Create a New Notebook with T4 Runtime
+1. Log in to your Google Colab account.
+2. Create a new notebook.
+3. In the notebook, navigate to `Runtime` > `Change runtime type`.
+4. Select `GPU` and choose the `T4` option for the hardware accelerator.
+
+### Step 2: Upload `server.py` to Colab
+1. On your local machine, create a file named `server.py`. This file will serve as the backend for running the LLMs on Colab.
+2. In your Colab notebook, click on the file icon on the left panel.
+3. Upload the `server.py` file to your Colab workspace.
+
+### Step 3: Copy and Run the `ollamaoncolab.ipynb` Notebook
+1. Copy the contents of the `ollamaoncolab.ipynb` notebook into the Colab notebook you created in Step 1.
+2. Run all the cells in the notebook. This will set up the environment, install necessary dependencies, and start the server.
+
+### Step 4: Execute `client.py` on Your Local Machine
+1. On your local machine, create and open a file named `client.py`.
+2. Write or paste the code necessary to connect to the server running on Colab.
+3. Run `client.py` to interact with the LLM hosted on the cloud.
+
+## Future Plans
+
+- **Tutorial Addition:** We plan to add a comprehensive tutorial on how to pull models from the Hugging Face Hub and host them on Ollama + Colab. This will extend the versatility of the current setup, allowing for even more powerful language models.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request if you'd like to improve this guide or add new features.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
