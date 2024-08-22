@@ -11,6 +11,6 @@ data = {
 response = requests.post(url, json=data)
 
 if response.status_code == 200:
-    print("Prediction:", response.json())
+    print("Prediction:", response.json()['message']['content'])
 else:
     print("Failed to get a response:", response.status_code)
