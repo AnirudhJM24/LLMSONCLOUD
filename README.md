@@ -10,8 +10,7 @@ This guide walks you through the process of running large language models (LLMs)
   - [Step 3: Copy and Run the `ollamaoncolab.ipynb` Notebook](#step-3-copy-and-run-the-ollamaoncolabipynb-notebook)
   - [Step 4: Execute `client.py` on Your Local Machine](#step-4-execute-clientpy-on-your-local-machine)
 - [Future Plans](#future-plans)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Prerequisites
 
@@ -29,7 +28,7 @@ Before starting, ensure you have the following:
 4. Select `GPU` and choose the `T4` option for the hardware accelerator.
 
 ### Step 2: Upload `server.py` to Colab
-1. On your local machine, create a file named `server.py`. This file will serve as the backend for running the LLMs on Colab.
+1. On your local machine, create a file named `server.py`. This file will serve as the backend for running the LLMs on Colab. I have uploaded an example of what it looks like
 2. In your Colab notebook, click on the file icon on the left panel.
 3. Upload the `server.py` file to your Colab workspace.
 
@@ -39,17 +38,11 @@ Before starting, ensure you have the following:
 
 ### Step 4: Execute `client.py` on Your Local Machine
 1. On your local machine, create and open a file named `client.py`.
-2. Write or paste the code necessary to connect to the server running on Colab.
-3. Run `client.py` to interact with the LLM hosted on the cloud.
+2. Paste the code necessary to connect to the server running on Colab.
+3. Modify and Run `client.py` to interact with the LLM hosted on the cloud.
 
 ## Future Plans
 
-- **Tutorial Addition:** We plan to add a comprehensive tutorial on how to pull models from the Hugging Face Hub and host them on Ollama + Colab. This will extend the versatility of the current setup, allowing for even more powerful language models.
+-  I plan to add a comprehensive tutorial on how to pull models from the Hugging Face Hub and host them on Ollama + Colab. This will extend the versatility of the current setup, allowing for even more powerful language models.
 
-## Contributing
 
-Contributions are welcome! Please fork this repository and submit a pull request if you'd like to improve this guide or add new features.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
