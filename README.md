@@ -41,8 +41,12 @@ Before starting, ensure you have the following:
 2. Paste the code necessary to connect to the server running on Colab.
 3. Modify and Run `client.py` to interact with the LLM hosted on the cloud.
 
-## Future Plans
+### Creating GGUF models using OLLAMA
 
--  I plan to add a comprehensive tutorial on how to pull models from the Hugging Face Hub and host them on Ollama + Colab. This will extend the versatility of the current setup, allowing for even more powerful language models.
+1. Download huggingface-cli ```pip install -U "huggingface_hub[cli]"```
+2. find the model of your choice and download using the command - ``` huggingface-cli download repo-id filename --local-dir /foldername ```
+3. create a new file `makefile` and in it type ``` FROM /foldername/modelfilename
+4. Either in the `server.py` or the `ollamaoncolab.py` run the following command - `ollama create modelname -f makefile'
+5. list the models - `ollama list` and use the modelname in your client
 
 
