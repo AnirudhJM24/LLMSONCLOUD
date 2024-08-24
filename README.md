@@ -9,7 +9,7 @@ This guide walks you through the process of running large language models (LLMs)
   - [Step 2: Upload `server.py` to Colab](#step-2-upload-serverpy-to-colab)
   - [Step 3: Copy and Run the `ollamaoncolab.ipynb` Notebook](#step-3-copy-and-run-the-ollamaoncolabipynb-notebook)
   - [Step 4: Execute `client.py` on Your Local Machine](#step-4-execute-clientpy-on-your-local-machine)
-- [Future Plans](#future-plans)
+- [Creating GGUF models using OLLAMA](#Creating-GGUF-models-using-OLLAMA)
 
 
 ## Prerequisites
