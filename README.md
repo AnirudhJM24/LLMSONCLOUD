@@ -47,6 +47,6 @@ Before starting, ensure you have the following:
 2. find the model of your choice and download using the command - ``` huggingface-cli download repo-id filename --local-dir /foldername ```
 3. create a new file `makefile` and in it type ``` FROM /foldername/modelfilename
 4. Either in the `server.py` or the `ollamaoncolab.py` run the following command - `ollama create modelname -f makefile'
-5. list the models - `ollama list` and use the modelname in your client
+5. list the models - `ollama list ` and use the modelname in your client
 
 
